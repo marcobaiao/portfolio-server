@@ -11,11 +11,11 @@ const globalErrorHandler = require("./controllers/errorController");
 
 const projectRouter = require("./routes/projectRoutes");
 const projectCategoryRouter = require("./routes/projectCategoryRoutes");
-const postRouter = require("../server/routes/postRoutes");
-const postCategoryRouter = require("../server/routes/postCategoryRoutes");
-const informationRouter = require("../server/routes/informationRoutes");
-const adminRouter = require("../server/routes/adminRoutes");
-const authRouter = require("../server/routes/authRoutes");
+const postRouter = require("./routes/postRoutes");
+const postCategoryRouter = require("./routes/postCategoryRoutes");
+const informationRouter = require("./routes/informationRoutes");
+const adminRouter = require("./routes/adminRoutes");
+const authRouter = require("./routes/authRoutes");
 
 const app = express();
 
