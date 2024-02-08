@@ -30,7 +30,7 @@ exports.uploadProjectImages = upload.fields([
   },
   {
     name: "images",
-    maxCount: 10,
+    maxCount: 20,
   },
 ]);
 
@@ -124,6 +124,7 @@ exports.getAllProjects = catchAsync(async (req, res, next) => {
   }
 
   const projects = await Project.find(findObj || {})
+    .sort({ name: 1 })
     .skip(skip)
     .limit(limit)
     .populate({
